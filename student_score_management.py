@@ -19,7 +19,7 @@ print("===== 原始数据 =====")
 print(df)
 
 #2.数据清洗
-print("缺失数据用科目平均分填充")
+print("\n缺失数据用科目平均分填充")
 # df_clean = df.fillna(df.mean(numeric_only=True))
 df_clean = df.fillna({'语文':df['语文'].mean(),'数学':df['数学'].mean(),'英语':df['英语'].mean()})  #dict：指定列分别填充值
 
@@ -27,7 +27,7 @@ print("\n===== 清洗后完整数据 =====")
 print(df_clean)
 
 #3.数据统计
-print("新增总分、平均分")
+print("\n新增总分、平均分")
 # df_clean["总分"] = df_clean[["语文","数学","英语"]].sum(axis=1)           #跨列相加
 df_clean['总分'] = df_clean['语文'] + df_clean['数学'] + df_clean['英语']
 df_clean["平均分"] = df_clean["总分"] / 3
