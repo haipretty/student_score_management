@@ -22,3 +22,7 @@ python student_score_management.py
 ## 学习收获
 - 掌握了 Pandas 数据清洗与分组统计
 - 理解了缺失值处理的多种方法
+
+## 关联项目
+- 📊 [我的作品集主页](https://github.com/haipretty/portfolio)
+- 📔 [学习轨迹与专项练习](https://github.com/haipretty/my_project)
